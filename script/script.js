@@ -1,8 +1,8 @@
 class Traveler {
     constructor(name,food,isHealthy){
         this.name = name;
-        this.food = 1;
-        this.isHealthy = true;
+        this.food = food || 1;
+        this.isHealthy = isHealthy || true;
     }
     hunt(){
         this.food+= 2;
